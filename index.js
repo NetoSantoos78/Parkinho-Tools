@@ -114,7 +114,7 @@ class App extends Component {
     return (
       <>
         <h1>Encriptar o Texto !</h1>
-        <h2 style={{}} >Key: </h2><h6>CMozpq0398190ijaVMiaefori666666</h6>
+        <h2 style="display" >Key: </h2><h5>CMozpq0398190ijaVMiaefori666666</h5>
         <div className="form-group">
           <input className="form-control" value={this.state.inputText} onChange={this.handleInputTextChange} style={{width:'40%', height:40, marginRight: 20}} placeholder="Input Text" /> 
           <input className="form-control" value={this.state.inputKey} onChange={this.handleInputKeyChange} style={{width:'40%', height:40}} placeholder="Key" />
@@ -127,10 +127,6 @@ class App extends Component {
           <input className="form-control" value={this.state.encryptedBase64} onChange={this.handleMsgChange} style={{width:'40%', height:40, marginRight: 20}} placeholder="Encrypted String" /> 
           <input className="form-control" value={this.state.key} onChange={this.handleDecryptKeyChange} style={{width:'40%', height:40}} placeholder="Key" />
         </div>
-
-        <pre className="output"><code>{this.state.outputText}</code></pre>
-        <small><a href="https://stackblitz.com/edit/cryptojs-aes-encrypt-decrypt" target="_blank">(View source code)</a></small>
-
       </>
     );
   }
