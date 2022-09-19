@@ -113,7 +113,8 @@ class App extends Component {
     }
     return (
       <>
-        <h1>Crypto-JS encryptAES</h1>
+        <h1>Encriptar o Texto !</h1>
+        <h2 style={{}} >Key: </h2><h6>CMozpq0398190ijaVMiaefori666666</h6>
         <div className="form-group">
           <input className="form-control" value={this.state.inputText} onChange={this.handleInputTextChange} style={{width:'40%', height:40, marginRight: 20}} placeholder="Input Text" /> 
           <input className="form-control" value={this.state.inputKey} onChange={this.handleInputKeyChange} style={{width:'40%', height:40}} placeholder="Key" />
@@ -121,7 +122,7 @@ class App extends Component {
 
         <pre className="output"><code>{this.state.encryptedBase64Input}</code></pre>
 
-        <h1>Crypto-JS decryptAES</h1>
+        <h1>Descriptar o Texto !</h1>
         <div className="form-group">
           <input className="form-control" value={this.state.encryptedBase64} onChange={this.handleMsgChange} style={{width:'40%', height:40, marginRight: 20}} placeholder="Encrypted String" /> 
           <input className="form-control" value={this.state.key} onChange={this.handleDecryptKeyChange} style={{width:'40%', height:40}} placeholder="Key" />
