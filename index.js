@@ -137,20 +137,19 @@ class App extends Component {
             value={this.state.inputText}
             onChange={this.handleInputTextChange}
             style={{ width: '40%', height: 40, marginRight: 20 }}
-            placeholder="Input Text"
+            placeholder="Texto para criptografar"
           />
           <input
             className="form-control"
-            value={this.state.inputKey}
+            value="CMozpq0398190ijaVMiaefori666666"
             onChange={this.handleInputKeyChange}
             style={{ width: '40%', height: 40 }}
             placeholder="Key"
           />
         </div>
-
-        <pre className="output">
-          <code>{this.state.encryptedBase64Input}</code>
-        </pre>
+        <pre></pre>
+        <input className="output" type="text" name="texto" id="texto" value={this.state.encryptedBase64Input}/><pre></pre>
+        
 
         <h1>Descriptar o Texto !</h1>
         <div className="form-group">
@@ -159,16 +158,26 @@ class App extends Component {
             value={this.state.encryptedBase64}
             onChange={this.handleMsgChange}
             style={{ width: '40%', height: 40, marginRight: 20 }}
-            placeholder="Encrypted String"
+            placeholder="Texto para descriptografar"
           />
           <input
             className="form-control"
-            value={this.state.key}
+            value="CMozpq0398190ijaVMiaefori666666"
             onChange={this.handleDecryptKeyChange}
             style={{ width: '40%', height: 40 }}
             placeholder="Key"
           />
         </div>
+        <pre></pre>
+        <input className="output" type="text" name="texto" id="texto" value={this.state.outputText} /><pre></pre>
+        <small>
+          <a
+            href="https://stackblitz.com/edit/cryptojs-aes-encrypt-decrypt"
+            target="_blank"
+          >
+            (View source code)
+          </a>
+        </small>
       </>
     );
   }
