@@ -148,8 +148,15 @@ class App extends Component {
           />
         </div>
         <pre></pre>
-        <input className="output" type="text" name="texto" id="texto" value={this.state.encryptedBase64Input}/><pre></pre>
-        
+        <input
+          style={{ width: '80%', fontSize: 10 }}
+          className="output"
+          type="text"
+          name="encriptado"
+          id="encriptado"
+          value={this.state.encryptedBase64Input}
+        />
+        <pre></pre>
 
         <h1>Descriptar o Texto !</h1>
         <div className="form-group">
@@ -169,15 +176,15 @@ class App extends Component {
           />
         </div>
         <pre></pre>
-        <input className="output" type="text" name="texto" id="texto" value={this.state.outputText} /><pre></pre>
-        <small>
-          <a
-            href="https://stackblitz.com/edit/cryptojs-aes-encrypt-decrypt"
-            target="_blank"
-          >
-            (View source code)
-          </a>
-        </small>
+        <input
+          style={{ width: '80%', fontSize: 10 }}
+          className="output"
+          type="text"
+          name="texto"
+          id="texto"
+          value={this.state.outputText}
+        />
+        <pre></pre>
       </>
     );
   }

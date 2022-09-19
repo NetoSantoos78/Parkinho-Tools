@@ -1,11 +1,11 @@
-<script>
-  function copiarTexto1() {
-    let textoCopiado = document.getElementById('encriptado');
-    textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 99999);
+<script type="text/javascript">
+  const textInput = document.getElementById('encriptado');
+  const copyButton = document.getElementById('encriptado1');
+
+  copyButton.addEventListener('click', ()=> {
+    textInput.select();
     document.execCommand('copy');
-    alert('O texto é: ' + textoCopiado.value);
-  }
+  });
 </script>
 <!DOCTYPE html>
 <html lang="en">
